@@ -1,5 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import { assetUrl } from '@/lib/bundle';
 
 /**
  * Paid-tier preview animations.
@@ -22,11 +23,15 @@ function readSampleAnimations(): SampleAnimation[] {
   try {
     return fs
       .readdirSync(SAMPLES_DIR)
-      .filter((file) => file.endsWith('.webp'))
+      .filter(
+        (file) =>
+          file.endsWith('.webp') &&
+          !/-(start|peak|main)\.webp$/.test(file),
+      )
       .sort()
       .map((file) => ({
         slug: file.replace(/\.webp$/, ''),
-        src: `/images/samples/${file}`,
+        src: assetUrl(`/images/samples/${file}`),
       }));
   } catch {
     return [];

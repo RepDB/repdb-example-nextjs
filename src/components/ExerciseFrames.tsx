@@ -1,4 +1,4 @@
-import type { ImageVariant } from '@/lib/bundle';
+import { assetUrl, type ImageVariant } from '@/lib/bundle';
 
 const VARIANT_LABELS: Record<ImageVariant, string> = {
   start: 'Start',
@@ -33,7 +33,7 @@ export function ExerciseFrames({
         <Frame
           key={v}
           label={VARIANT_LABELS[v] ?? v}
-          src={`/images/flat/${slug}-${v}.webp`}
+          src={assetUrl(`/images/flat/${slug}-${v}.webp`)}
           alt={`${name} — ${VARIANT_LABELS[v] ?? v}`}
         />
       ))}

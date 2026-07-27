@@ -34,6 +34,7 @@ export interface TaxonomyEntry {
 
 export interface Bundle {
   schema_version: number;
+  generated_at?: string;
   locales: Locale[];
   exercises: Exercise[];
   muscles?: Record<string, TaxonomyEntry>;
@@ -46,6 +47,12 @@ export const EXERCISES = BUNDLE.exercises;
 export const LOCALES: Locale[] = BUNDLE.locales;
 export const MUSCLES = BUNDLE.muscles ?? {};
 export const EQUIPMENT = BUNDLE.equipment ?? {};
+export const ASSET_VERSION = BUNDLE.generated_at ?? 'dev';
+
+/** Bust browser/Next caches when a newly generated bundle replaces vendored assets. */
+export function assetUrl(path: string): string {
+  return `${path}?v=${encodeURIComponent(ASSET_VERSION)}`;
+}
 
 /** Base slug for image files — aliased exercises borrow another slug's renders. */
 export function imageBase(ex: Exercise): string {
@@ -62,7 +69,7 @@ export function exerciseThumb(ex: Exercise): string | null {
   const variants = flatVariants(ex);
   const pick =
     variants.find((v) => v === 'peak') ?? variants.find((v) => v === 'main') ?? variants[0];
-  return pick ? `/images/flat/${imageBase(ex)}-${pick}.webp` : null;
+  return pick ? assetUrl(`/images/flat/${imageBase(ex)}-${pick}.webp`) : null;
 }
 
 function localized(entry: TaxonomyEntry | undefined, locale: Locale, fallback: string): string {
@@ -78,7 +85,7 @@ export function muscleLabel(key: string, locale: Locale): string {
 
 export function muscleIcon(key: string): string | null {
   const img = MUSCLES[key]?.image;
-  return img ? `/images/muscles/${img}` : null;
+  return img ? assetUrl(`/images/muscles/${img}`) : null;
 }
 
 export function equipmentLabel(key: string, locale: Locale): string {
@@ -87,7 +94,7 @@ export function equipmentLabel(key: string, locale: Locale): string {
 
 export function equipmentIcon(key: string): string | null {
   const img = EQUIPMENT[key]?.image;
-  return img ? `/images/equipment/${img}` : null;
+  return img ? assetUrl(`/images/equipment/${img}`) : null;
 }
 
 export function exerciseName(ex: Exercise, locale: Locale): string {

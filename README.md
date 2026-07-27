@@ -37,7 +37,7 @@ npm run start
 
 ```
 src/data/exercises.json        # the free-tier bundle (400 exercises), imported as a module
-public/images/flat/*.webp      # 745 flat webp (start/peak pairs + single-pose "main")
+public/images/flat/*.webp      # 741 flat webp (start/peak pairs + single-pose "main")
 public/images/muscles/*.webp   # 27 muscle icons
 public/images/equipment/*.webp # 46 equipment icons
 public/images/samples/*.webp   # 1 paid-tier looping animation (Standard-tier preview)

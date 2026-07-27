@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import Image from 'next/image';
 import {
   type Exercise,
   type Locale,
@@ -18,7 +17,9 @@ export function ExerciseCard({ exercise, locale }: { exercise: Exercise; locale:
     >
       <div className="aspect-[4/3] bg-sky-50 dark:bg-[color-mix(in_srgb,var(--surface-2)_92%,#dbeafe_8%)] flex items-center justify-center overflow-hidden">
         {thumb ? (
-          <Image
+          /* The bundle timestamp in `thumb` prevents stale vendored images after a refresh. */
+          // eslint-disable-next-line @next/next/no-img-element
+          <img
             src={thumb}
             alt={name}
             width={344}
