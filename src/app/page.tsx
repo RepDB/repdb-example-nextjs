@@ -46,6 +46,8 @@ export default async function Home({ searchParams }: PageProps) {
         <LocaleSwitcher current={locale} />
       </div>
 
+      <SamplePreview />
+
       <FilterBar
         bodyParts={BODY_PARTS}
         equipments={EQUIPMENTS}
@@ -70,8 +72,6 @@ export default async function Home({ searchParams }: PageProps) {
           ))}
         </ul>
       )}
-
-      <SamplePreview />
     </div>
   );
 }
