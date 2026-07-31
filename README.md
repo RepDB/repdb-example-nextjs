@@ -1,7 +1,7 @@
 # RepDB Example — Next.js
 
 A small Next.js 16 starter that browses **400 fitness exercises** from the
-[RepDB free-tier dataset](https://repdb.co/free-exercise-dataset).
+[RepDB free-tier dataset](https://exercise-dataset.com/).
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fsergei-argutin%2Frepdb-example-nextjs&project-name=repdb-fitness-starter&repository-name=repdb-fitness-starter)
 
@@ -66,7 +66,7 @@ fine-tuning, or similar). See term 5 of [LICENSE-free.md](LICENSE-free.md).
 
 For the full, growing dataset with two visual styles, transparent backgrounds,
 animations, 1024px images, and multilingual data, see
-<https://repdb.co/pricing>.
+<https://repdb.co/pricing?utm_source=github-nextjs>.
 
 > Exercise data & images: RepDB (https://repdb.co)
 
