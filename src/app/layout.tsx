@@ -8,7 +8,7 @@ const geist = Geist({ variable: '--font-geist-sans', subsets: ['latin'] });
 export const metadata: Metadata = {
   title: 'Exercise Browser — built with RepDB',
   description:
-    '400 fitness exercises with flat images, instructions, and muscle data — sourced from the RepDB free-tier dataset.',
+    '250 fitness exercises with flat images, instructions, and muscle data — sourced from the RepDB free-tier dataset.',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
