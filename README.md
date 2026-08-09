@@ -3,7 +3,7 @@
 A small Next.js 16 starter that browses **400 fitness exercises** from the
 [RepDB free-tier dataset](https://exercise-dataset.com/).
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fsergei-argutin%2Frepdb-example-nextjs&project-name=repdb-fitness-starter&repository-name=repdb-fitness-starter)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FRepDB%2Frepdb-example-nextjs&project-name=repdb-fitness-starter&repository-name=repdb-fitness-starter)
 
 The starter has no environment variables or external API dependency. The
 exercise JSON and WebP assets are vendored, so the Vercel deploy works as-is.
@@ -72,9 +72,9 @@ animations, 1024px images, and multilingual data, see
 
 ## Sister demos
 
-- [**exercise-dataset**](https://github.com/sergei-argutin/exercise-dataset) — the raw dataset (JSON + WebP), browsable [live viewer](https://exercise-dataset.com/)
-- [repdb-example-react-native](https://github.com/sergei-argutin/repdb-example-react-native)
-- [repdb-example-flutter](https://github.com/sergei-argutin/repdb-example-flutter)
+- [**exercise-dataset**](https://github.com/RepDB/exercise-dataset) — the raw dataset (JSON + WebP), browsable [live viewer](https://exercise-dataset.com/)
+- [repdb-example-react-native](https://github.com/RepDB/repdb-example-react-native)
+- [repdb-example-flutter](https://github.com/RepDB/repdb-example-flutter)
 
 ## License
 
