@@ -1,6 +1,6 @@
 # RepDB Example — Next.js
 
-A small Next.js 16 starter that browses **250 fitness exercises** from the
+A small Next.js 16 starter that browses the current fully illustrated
 [RepDB free-tier dataset](https://exercise-dataset.com/).
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FRepDB%2Frepdb-example-nextjs&project-name=repdb-fitness-starter&repository-name=repdb-fitness-starter)
@@ -36,8 +36,8 @@ npm run start
 ## What's vendored where
 
 ```
-src/data/exercises.json        # the free-tier bundle (250 exercises), imported as a module
-public/images/flat/*.webp      # 459 flat webp (start/peak pairs + single-pose "main")
+src/data/exercises.json        # the public flat-edition bundle, imported as a module
+public/images/flat/*.webp      # flat WebP (start/peak pairs + single-pose "main")
 public/images/muscles/*.webp   # 27 muscle icons
 public/images/equipment/*.webp # 46 equipment icons
 public/images/samples/*.webp   # 1 paid-tier looping animation (Standard-tier preview)
@@ -52,8 +52,9 @@ no hardcoded list.
 
 ## Data & license
 
-This demo uses the RepDB **free tier**: a dated snapshot of 250 exercises with
-flat-style images, under the [RepDB Free Tier License](LICENSE-free.md).
+This demo uses the RepDB **free tier**: every fully illustrated exercise in
+the current catalog with flat-style images, under the
+[RepDB Free Tier License](LICENSE-free.md).
 
 **Attribution required.** Keep a visible link — "Exercise data by RepDB
 (repdb.co)" — in your app's credits, README, or footer.
@@ -64,8 +65,8 @@ fine-tuning, or similar). See term 5 of [LICENSE-free.md](LICENSE-free.md).
 
 **No redistribution as a dataset** — in-app use only.
 
-For the full, growing dataset with two visual styles, transparent backgrounds,
-animations, 1024px images, and multilingual data, see
+For classic images, transparent backgrounds, animations, 1024px assets, and a
+commercial license without attribution, see
 <https://repdb.co/pricing?utm_source=github-nextjs>.
 
 > Exercise data & images: RepDB (https://repdb.co)

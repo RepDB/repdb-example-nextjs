@@ -8,7 +8,7 @@ const geist = Geist({ variable: '--font-geist-sans', subsets: ['latin'] });
 export const metadata: Metadata = {
   title: 'Exercise Browser — built with RepDB',
   description:
-    '250 fitness exercises with flat images, instructions, and muscle data — sourced from the RepDB free-tier dataset.',
+    'Fitness exercises with flat images, instructions, and muscle data — sourced from the RepDB public flat edition.',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -51,8 +51,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               — free tier, attribution required.
             </p>
             <p>
-              Want the full growing catalog with two visual styles, transparent
-              backgrounds, animations, 1024px images, and more?{' '}
+              Want classic assets, transparent backgrounds, animations, 1024px
+              images, and a license without attribution?{' '}
               <a
                 className="text-accent hover:text-accent-hover font-medium"
                 href="https://repdb.co/pricing"
