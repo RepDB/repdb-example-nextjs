@@ -36,7 +36,7 @@ npm run start
 ## What's vendored where
 
 ```
-src/data/exercises.json        # the public flat-edition bundle (609 exercises, EN/DE/ES), imported as a module
+src/data/exercises.json        # the public flat-edition bundle (701 exercises, EN/DE/ES), imported as a module
 public/images/flat/*.webp      # flat WebP (start/peak pairs + single-pose "main")
 public/images/muscles/*.webp   # 27 muscle icons
 public/images/equipment/*.webp # 61 equipment icons
