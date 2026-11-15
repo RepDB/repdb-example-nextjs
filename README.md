@@ -1,12 +1,18 @@
-# RepDB Example — Next.js
+# Next.js fitness app starter with a free exercise database
 
-A small Next.js 16 starter that browses the current fully illustrated
-[RepDB free-tier dataset](https://exercise-dataset.com/).
+A small Next.js 16 app that lists, filters and shows 700+ exercises from the free
+[RepDB exercise dataset](https://github.com/RepDB/exercise-dataset): illustrations,
+target muscles, equipment, instructions and MET values in English, German and
+Spanish. Fork it as the exercise library of your workout app.
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FRepDB%2Frepdb-example-nextjs&project-name=repdb-fitness-starter&repository-name=repdb-fitness-starter)
 
-The starter has no environment variables or external API dependency. The
-exercise JSON and WebP assets are vendored, so the Vercel deploy works as-is.
+No environment variables, no API key, no external API. The exercise JSON and
+WebP images are vendored, so the Vercel deploy works as is.
+
+Want motion? The catalog page shows one looping exercise animation from RepDB
+Standard; more are in the
+[animation gallery](https://repdb.co/exercise-animations/?utm_source=github-nextjs).
 
 ## Features
 
@@ -36,10 +42,10 @@ npm run start
 ## What's vendored where
 
 ```
-src/data/exercises.json        # the public flat-edition bundle (701 exercises, EN/DE/ES), imported as a module
+src/data/exercises.json        # the public flat-edition bundle (every free exercise, EN/DE/ES), imported as a module
 public/images/flat/*.webp      # flat WebP (start/peak pairs + single-pose "main")
-public/images/muscles/*.webp   # 27 muscle icons
-public/images/equipment/*.webp # 61 equipment icons
+public/images/muscles/*.webp   # muscle icons
+public/images/equipment/*.webp # equipment icons
 public/images/samples/*.webp   # 1 paid-tier looping animation (Standard-tier preview)
 LICENSE-free.md                # RepDB Free Tier License for the bundle data & images
 LICENSE                        # MIT for the example code
